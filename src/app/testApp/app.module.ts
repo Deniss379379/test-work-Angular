@@ -3,13 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-//==========
-import { RouterModule } from '@angular/router'
-import { LearnAppModule } from './learnApp/app.module';
-import { TestAppModule } from './testApp/app.module';
-import {HttpClient, HttpClientModule} from '@angular/common/http';
-
-
 
 @NgModule({
   declarations: [
@@ -22,4 +15,4 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class TestAppModule { }
