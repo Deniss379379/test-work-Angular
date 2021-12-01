@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 
-import { AppComponent } from './app.component';
+import { LearnAppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
@@ -26,7 +26,7 @@ import { ShippingComponent } from './shipping/shipping.component';
     ])
   ],
   declarations: [
-    AppComponent,
+    LearnAppComponent,
     TopBarComponent,
     ProductListComponent,
     ProductAlertsComponent,
@@ -35,7 +35,7 @@ import { ShippingComponent } from './shipping/shipping.component';
     ShippingComponent
   ],
   bootstrap: [
-    AppComponent
+    LearnAppComponent
   ]
 })
 export class LearnAppModule { }
