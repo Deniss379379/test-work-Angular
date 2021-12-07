@@ -1,0 +1,16 @@
+  <app-top-bar></app-top-bar>
+  <table class = "table text-center">
+    <thead >
+    <tr>
+    <th class="custom-border">Name</th>
+    <th class="custom-border">Acount</th>
+  </tr>
+  </thead>
+    <tr *ngFor = "let transaction of transactions">
+      <ng-container *ngIf = "transaction.type === 'income'">
+        <td >{{transaction.name.first}} {{transaction.name.last}}</td>
+        <td >{{getRandomNumber(1,4000,2)}}</td>
+      </ng-container>
+  </tr>
+
+    </table>

@@ -1,0 +1,71 @@
+<div class = "container custom-margin">
+  <div class = "card text-center custom-margin">
+  <div class="card-header">
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Welcome</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">See transactions</a>
+  </div>
+  <div class="card-footer text-muted">
+    You have {{transactions.total}} transactions
+  </div>
+</div>
+
+
+<div class = "row custom-margin">
+  <div class = "col-sm-6">
+<div class = "card">
+  <div class="card-body">
+    <h5 class="card-title">{{getNumberTransactions('income')}}</h5>
+    <p class="card-text">Income</p>
+    <div class = "text-right">
+    <a href="#" routerLink="/navigator?tab=0" class="btn btn-primary">See all</a>
+    </div>
+  </div>
+</div>
+  </div>
+
+
+  <div class = "col-sm-6">
+<div class = "card">
+  <div class="card-body">
+    <h5 class="card-title">{{getNumberTransactions('investment')}}</h5>
+    <p class="card-text">Investments</p>
+    <div class = "text-right">
+    <a href="#" routerLink="/navigator?tab=1" class="btn btn-primary">See all</a>
+    </div>
+  </div>
+</div>
+  </div>
+
+  </div>
+
+  <div class="row custom-margin">
+    <div class = "col-sm-6">
+<div class = "card">
+  <div class="card-body">
+    <h5 class="card-title">{{getNumberTransactions('outcome')}}</h5>
+    <p class="card-text">Outcome</p>
+    <div class = "text-right">
+    <a href="#" routerLink="/navigator?tab=2" class="btn btn-primary">See all</a>
+    </div>
+  </div>
+</div>
+</div>
+
+  <div class = "col-sm-6">
+<div class = "card">
+  <div class="card-body">
+    <h5 class="card-title">{{getNumberTransactions('loan')}}</h5>
+    <p class="card-text">Loans</p>
+    <div class = "text-right">
+    <a href="#" routerLink="/navigator?tab=3" class="btn btn-primary">See all</a>
+    </div>
+  </div>
+</div>
+<div>
+
+</div>
+
+</div>
