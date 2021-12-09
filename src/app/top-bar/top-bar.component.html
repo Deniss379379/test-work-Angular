@@ -1,14 +1,7 @@
 
-<ul class = "nav  nav-tabs justify-content-center">
-  <li class="nav-item">
-    <a routerLink="/navigator?tab=0" class="nav-link"> Income </a>
-  </li>
-  <li class="nav-item">
-    <a routerLink="/navigator?tab=1" class="nav-link">Outcome </a>
-  </li>
-  <li class="nav-item">
-    <a  routerLink="/navigator?tab=2" class = "nav-link">Loans</a>
-    <li class="nav-item">
-      <a  routerLink="/navigator?tab=3" class = "nav-link">Investments</a>
-  </li>
-</ul>
+<nav  class = "nav  justify-content-center" aria-label="list transactions">
+  <a  routerLink="/navigator?tab=0" class = "nav-item nav-link" routerLinkActive = "nav-link--active"  tabindex="1" aria-label="income"> Income </a>
+  <a routerLink="/navigator?tab=1" class="nav-item nav-link" routerLinkActive = "nav-link--active" tabindex="2" aria-label="outcome">Outcome </a>
+  <a  routerLink="/navigator?tab=2" class = "nav-item  nav-link" routerLinkActive = "nav-link--active" tabindex="3" aria-label="loans">Loans</a>
+  <a  routerLink="/navigator?tab=3" class = "nav-item nav-link" routerLinkActive = "nav-link--active" tabindex="4" aria-label="invest">Investments</a>
+</nav>
