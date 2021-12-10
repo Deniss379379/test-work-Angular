@@ -1,4 +1,32 @@
-const rawData = [
+
+export interface Data { 
+  type: "income" | "outcome" | "loan" | "investment",
+  _id: string,
+  amount: string,
+  name: {
+    first: string,
+    last: string,
+  },
+  company: string,
+  email: string,
+  phone: string,
+  address: string,
+};
+
+
+
+export interface Transaction {
+  total: number,
+  data: Data[],
+
+}
+
+
+
+export const transactions: Transaction  = 
+  {
+    "total": 100,
+    "data": [
     {
       "_id": "5d99beb677015a5c2c14542e",
       "amount": "floating(1, 4000, 2)",
@@ -1298,7 +1326,8 @@ const rawData = [
       "email": "rhoda.pickett@pyramax.io",
       "phone": "+1 (938) 546-2133",
       "address": "547 Ebony Court, Rivera, Minnesota, 915"
-    }
-]
+    },
+  ] 
+  }
 
-export { rawData };
+

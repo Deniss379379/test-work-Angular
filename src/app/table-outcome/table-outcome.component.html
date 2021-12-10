@@ -1,5 +1,5 @@
   <app-top-bar></app-top-bar>
-  <table class = "table">
+  <table class = "table text-center">
   <thead>
     <tr >
     <th>Name</th>
@@ -7,9 +7,7 @@
   </tr>
   </thead>
     <tr *ngFor = "let transaction of transactions">
-      <ng-container *ngIf = "transaction.type === 'outcome'">
-    <td>{{transaction.name.first}} {{transaction.name.last}}</td>
-     <td >{{getRandomNumber(1,4000,2)}}</td>
-      </ng-container>
+      <td>{{transaction.name}}</td>
+      <td >{{transaction.amount}}</td>
   </tr>
     </table>

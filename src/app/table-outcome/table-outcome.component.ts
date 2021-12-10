@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { transactions } from '../transactions';
+import { arrayOfOutcoms } from '../data';
 
 
 
@@ -10,13 +10,7 @@ import { transactions } from '../transactions';
 })
 export class TableOutcomeComponent {
 
-   transactions = transactions.data;
+   transactions = arrayOfOutcoms;
 
-public getRandomNumber (num1: number, num2: number, afterDot: number ): number {
-  const lower = Math.min(Math.abs(num1), Math.abs(num2));
-  const upper = Math.max(Math.abs(num1), Math.abs(num2));
-  const result = Math.random() * (upper - lower) + lower;
-  return Number(result.toFixed(afterDot));
-};
 }
 

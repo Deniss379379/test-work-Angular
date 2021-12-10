@@ -1,5 +1,11 @@
 import { Component } from '@angular/core';
-import { transactions } from '../transactions';
+import { 
+          numberAllTransactions,
+          numberIncomsTransactions,
+          numberLoansTransactions,
+          numberOutcomsTransactions,
+          numberInvestmentsTransactions
+        } from '../data';
 
 @Component({
   selector: 'app-summary-page',
@@ -8,10 +14,11 @@ import { transactions } from '../transactions';
 })
 export class SummaryPageComponent  {
 
-  transactions = transactions;
+  total = numberAllTransactions;  
+  totalIncoms = numberIncomsTransactions;
+  totalOutcoms = numberOutcomsTransactions;
+  totalLoans = numberLoansTransactions;
+  totalInvestments = numberInvestmentsTransactions;
 
-public getNumberTransactions ( type: string ) {
-  const amountArray = transactions.data.filter((item) => item.type === type);
-  return amountArray.length;
-};
+
 }

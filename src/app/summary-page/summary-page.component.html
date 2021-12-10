@@ -8,7 +8,7 @@
     <a href="#" class="btn btn-primary">See transactions</a>
   </div>
   <div class="card-footer text-muted">
-    You have {{transactions.total}} transactions
+    You have {{total}} transactions
   </div>
 </div>
 
@@ -17,7 +17,7 @@
   <div class = "col-sm-6" >
     <div class = "card custom-margin" tabindex = "2">
   <div class="card-body">
-    <h5 class="card-title">{{getNumberTransactions('income')}}</h5>
+    <h5 class="card-title">{{totalIncoms}}</h5>
     <p class="card-text">Income</p>
     <div class = "text-right">
     <a href="#" routerLink="/navigator?tab=0" class="btn btn-primary">See all</a>
@@ -30,7 +30,7 @@
   <div class = "col-sm-6">
     <div class = "card custom-margin" tabindex = "3">
   <div class="card-body">
-    <h5 class="card-title">{{getNumberTransactions('investment')}}</h5>
+    <h5 class="card-title">{{totalInvestments}}</h5>
     <p class="card-text">Investments</p>
     <div class = "text-right">
     <a href="#" routerLink="/navigator?tab=1" class="btn btn-primary">See all</a>
@@ -44,7 +44,7 @@
     <div class = "col-sm-6" >
       <div class = "card custom-margin" tabindex = "4">
   <div class="card-body">
-    <h5 class="card-title">{{getNumberTransactions('outcome')}}</h5>
+    <h5 class="card-title">{{totalOutcoms}}</h5>
     <p class="card-text">Outcome</p>
     <div class = "text-right">
     <a href="#" routerLink="/navigator?tab=2" class="btn btn-primary">See all</a>
@@ -56,7 +56,7 @@
 <div class = "col-sm-6">
   <div class = "card custom-margin" tabindex = "5">
   <div class="card-body">
-    <h5 class="card-title">{{getNumberTransactions('loan')}}</h5>
+    <h5 class="card-title">{{totalLoans}}</h5>
     <p class="card-text">Loans</p>
     <div class = "text-right">
     <a href="#" routerLink="/navigator?tab=3" class="btn btn-primary">See all</a>
