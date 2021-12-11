@@ -7,7 +7,7 @@ import { TableLoansComponent } from './table-loans/table-loans.component';
 import { TableInvestmentsComponent } from './table-investments/table-investments.component';
 import { SummaryPageComponent } from './summary-page/summary-page.component';
 
-const appRoutes: Routes = [];
+const routes: Routes = [];
 
 @NgModule({
   imports: [RouterModule.forRoot([
@@ -17,7 +17,7 @@ const appRoutes: Routes = [];
       { path: TAB_LOANS, component: TableLoansComponent },
       { path: TAB_INVESTMENTS, component: TableInvestmentsComponent },
   ])],
-  exports: [RouterModule.forRoot(myRoutes)]
+  exports: [RouterModule]
 })
 
 export class AppRoutingModule { }
