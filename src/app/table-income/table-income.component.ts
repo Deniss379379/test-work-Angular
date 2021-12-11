@@ -7,6 +7,7 @@ import { arrayOfIncoms } from '../data';
 })
 export class TableIncomeComponent {
 
+  
 transactions = arrayOfIncoms;
 
 }

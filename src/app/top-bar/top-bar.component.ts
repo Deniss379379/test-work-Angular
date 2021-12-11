@@ -1,4 +1,5 @@
 import { Component, HostListener } from '@angular/core';
+import { TAB_INCOME, TAB_OUTCOME, TAB_INVESTMENTS, TAB_LOANS } from '../constants';
 
 @Component({
   selector: 'app-top-bar',
@@ -6,6 +7,11 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./top-bar.component.scss']
 })
 export class TopBarComponent  {
+
+income: string = TAB_INCOME;
+outcome: string = TAB_OUTCOME;
+investments: string = TAB_INVESTMENTS;
+loans: string = TAB_LOANS;
 
 //linkStyle = "nav-link";
 

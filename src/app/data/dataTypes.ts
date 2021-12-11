@@ -8,14 +8,14 @@ import {transition} from "@angular/animations";
   const rawData = transactions.data;
 
 
-console.log(arrayCalcAmount)
-console.log(names)
+//console.log(arrayCalcAmount)
+//console.log(names)
 
 
 
 const arrayOfTypes = destructPropObj(rawData, 'type');
 
-console.log(arrayOfTypes)
+//console.log(arrayOfTypes)
 
 
 
@@ -43,7 +43,7 @@ return data
 
 createArray()
 
-console.log(data)
+//console.log(data)
 
 //const rawData = () => emptyArray.map
 
@@ -72,7 +72,7 @@ const outcome = "outcome";
 const investment = "investment";
 const loan = "loan";
 
-console.log(typeof transactions)
+//console.log(typeof transactions)
 
 
 const getArrayWithTypes = (array:any, typeForCheck:any) => {
@@ -88,7 +88,7 @@ const arrayOfInvestments = getArrayWithTypes(data, investment);
 
 const arrayOfLoans = getArrayWithTypes(data, loan);
 
-console.log(arrayOfIncoms);
+//console.log(arrayOfIncoms);
 const numberIncomsTransactions = arrayOfIncoms.length; 
 const numberOutcomsTransactions = arrayOfOutcoms.length; 
 
