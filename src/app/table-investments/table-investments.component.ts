@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {  arrayOfInvestments } from '../data';
 
 @Component({
@@ -6,7 +6,11 @@ import {  arrayOfInvestments } from '../data';
   templateUrl: './table-investments.component.html',
   styleUrls: ['./table-investments.component.scss']
 })
-export class TableInvestmentsComponent {
+export class TableInvestmentsComponent implements OnInit {
+
+  ngOnInit() {
+  this.transactions;
+  };
 
   transactions = arrayOfInvestments;
 

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { 
           numberAllTransactions,
           numberIncomsTransactions,
@@ -13,7 +13,19 @@ import { TAB_INCOME, TAB_OUTCOME, TAB_LOANS, TAB_INVESTMENTS } from '../constant
   templateUrl: './summary-page.component.html',
   styleUrls: ['./summary-page.component.scss']
 })
-export class SummaryPageComponent  {
+export class SummaryPageComponent implements OnInit  {
+
+  ngOnInit() {
+  this.income;
+  this.outcome;
+  this.investments;
+  this.loans;
+  this.total;
+  this.totalIncoms;
+  this.totalOutcoms;
+  this.totalLoans;
+  this.totalInvestments;
+  };
 
   income: string = TAB_INCOME;
   outcome: string = TAB_OUTCOME;

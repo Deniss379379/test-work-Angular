@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { TAB_INCOME, TAB_OUTCOME, TAB_LOANS, TAB_INVESTMENTS } from '../constants';
 
 @Component({
@@ -6,7 +6,14 @@ import { TAB_INCOME, TAB_OUTCOME, TAB_LOANS, TAB_INVESTMENTS } from '../constant
   templateUrl: './top-bar.component.html',
   styleUrls: ['./top-bar.component.scss']
 })
-export class TopBarComponent  {
+export class TopBarComponent implements OnInit  {
+
+ngOnInit(){
+  this.income;
+  this.outcome;
+  this.investments;
+  this.loans;
+};
 
 income: string = TAB_INCOME;
 outcome: string = TAB_OUTCOME;

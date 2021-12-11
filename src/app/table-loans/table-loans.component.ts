@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {  arrayOfLoans } from '../data';
 
 @Component({
@@ -6,7 +6,11 @@ import {  arrayOfLoans } from '../data';
   templateUrl: './table-loans.component.html',
   styleUrls: ['./table-loans.component.scss']
 })
-export class TableLoansComponent {
+export class TableLoansComponent implements OnInit {
+
+  ngOnInit() {
+  this.transactions;
+  };
 
   transactions = arrayOfLoans;
 

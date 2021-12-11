@@ -1,12 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { arrayOfIncoms } from '../data';
 @Component({
   selector: 'app-table-income',
   templateUrl: './table-income.component.html',
   styleUrls: ['./table-income.component.scss']
 })
-export class TableIncomeComponent {
+export class TableIncomeComponent implements OnInit {
 
+  ngOnInit() {
+  this.transactions;
+  };
   
 transactions = arrayOfIncoms;
 

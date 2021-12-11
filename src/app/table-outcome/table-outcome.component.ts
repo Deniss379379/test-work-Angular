@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { arrayOfOutcoms } from '../data';
 
 
@@ -8,7 +8,11 @@ import { arrayOfOutcoms } from '../data';
   templateUrl: './table-outcome.component.html',
   styleUrls: ['./table-outcome.component.scss']
 })
-export class TableOutcomeComponent {
+export class TableOutcomeComponent implements OnInit {
+
+  ngOnInit() {
+  this.transactions;
+  };
 
    transactions = arrayOfOutcoms;
 
