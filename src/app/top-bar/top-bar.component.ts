@@ -1,9 +1,5 @@
 import { Component, HostListener } from '@angular/core';
-<<<<<<< HEAD
-import { TAB_INCOME, TAB_OUTCOME, TAB_INVESTMENTS, TAB_LOANS } from '../constants';
-=======
 import { TAB_INCOME, TAB_OUTCOME, TAB_LOANS, TAB_INVESTMENTS } from '../constants';
->>>>>>> routing
 
 @Component({
   selector: 'app-top-bar',
@@ -12,17 +8,10 @@ import { TAB_INCOME, TAB_OUTCOME, TAB_LOANS, TAB_INVESTMENTS } from '../constant
 })
 export class TopBarComponent  {
 
-<<<<<<< HEAD
 income: string = TAB_INCOME;
 outcome: string = TAB_OUTCOME;
 investments: string = TAB_INVESTMENTS;
 loans: string = TAB_LOANS;
-=======
-  income: string = TAB_INCOME;
-  outcome: string = TAB_OUTCOME;
-  loans: string = TAB_LOANS;
-  investments: string = TAB_INVESTMENTS;
->>>>>>> routing
 
 //linkStyle = "nav-link";
 
