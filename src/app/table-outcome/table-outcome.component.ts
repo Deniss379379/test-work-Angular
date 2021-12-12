@@ -6,8 +6,8 @@ import { arrayOfOutcoms } from '../data';
 @Component({
   selector: 'app-table-outcome',
   templateUrl: './table-outcome.component.html',
-  styleUrls: ['./table-outcome.component.scss']
 })
+
 export class TableOutcomeComponent implements OnInit {
 
   ngOnInit() {

@@ -13,6 +13,7 @@ import { TableLoansComponent } from './table-loans/table-loans.component';
 import { TableInvestmentsComponent } from './table-investments/table-investments.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { SummaryPageComponent } from './summary-page/summary-page.component';
+import { TableComponent } from './table/table.component';
 
 
 
@@ -25,6 +26,7 @@ import { SummaryPageComponent } from './summary-page/summary-page.component';
    TableLoansComponent,
    TableInvestmentsComponent,
    SummaryPageComponent,
+   TableComponent,
 
   ],
   imports: [

@@ -1,13 +1,7 @@
   <app-top-bar></app-top-bar>
-  <table class = "table text-center">
-  <thead>
-    <tr >
-    <th>Name</th>
-    <th>Acount</th>
-  </tr>
-  </thead>
+  <app-table>
     <tr *ngFor = "let transaction of transactions">
       <td>{{transaction.name}}</td>
       <td >{{transaction.amount}}</td>
   </tr>
-    </table>
+  </app-table>
