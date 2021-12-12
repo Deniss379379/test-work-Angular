@@ -31,7 +31,7 @@ const test =  getRandomNumber(MIN, MAX, AFTERDOT);
 const emptyArray = Array(100)
 
 
-const arrayCalcAmount = arrayAmount.map((item:any) => test);
+const arrayCalcAmount = arrayAmount.map((item:any) => getRandomNumber(MIN, MAX, AFTERDOT));
 
 
 
