@@ -1,12 +1,12 @@
 import { transactions } from "./rawData"
-import { destructPropObj } from "./utils/destructPropObj"
+import { getPropObj } from "./utils/getPropObj"
 import { transformItemsArray } from "./utils/transformItemsArray"
-import { getStringFromValuesObjectProperties } from  "./utils/getPropertiesFromObject"
+import { getPropertiesFromObject } from  "./utils/getPropertiesFromObject"
 
-const rawData = transactions.data;
+const rawData: object[] = transactions.data;
 
-const arrayName = destructPropObj(rawData, 'name');
+const arrayName = getPropObj(rawData, 'name');
 
-const names = transformItemsArray(arrayName, getStringFromValuesObjectProperties)
+const names: string[] = transformItemsArray(arrayName, getPropertiesFromObject);
 
 export { names };
