@@ -3,7 +3,7 @@ import { getPropObj } from "./utils/getPropObj";
 import {names} from "./dataNames";
 import {arrayCalcAmount} from "./dataAmount"
 
-const rawData = transactions.data;
+const rawData: object[] = transactions.data;
 
 const arrayOfTypes = getPropObj(rawData, 'type');
 
@@ -24,11 +24,10 @@ const getArrayWithTypes = (array: any,  typeForCheck:any) => {
   return result
 };
 
-const outcome = "outcome";
 
 const arrayOfIncoms = getArrayWithTypes(data, "income");
 
-const arrayOfOutcoms = getArrayWithTypes(data, outcome);
+const arrayOfOutcoms = getArrayWithTypes(data, "outcome");
 
 const arrayOfInvestments = getArrayWithTypes(data, "investment");
 
