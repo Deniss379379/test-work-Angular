@@ -1,5 +1,5 @@
 
-import { transactions } from "./rawData"
+//import { transactions } from "./rawData"
 import { getRandomNumber } from "./utils/getRandomNumber"
 //import { getPropObj } from "./utils/destructPropObj";
 //import { checkArray } from "./utils/checkArray"
@@ -7,7 +7,7 @@ import { getRandomNumber } from "./utils/getRandomNumber"
 import { MIN_NUMBER, MAX_NUMBER, AFTERDOT } from "../constants";
 //import { transformItemsArray } from "./utils/transformItemsArray";
 
-const rawData: object[] = transactions.data;
+//const rawData: object[] = transactions.data;
 //const arrayAmount: string[] = getPropObj(rawData, 'amount');
 
 //checkArray(arrayAmount);

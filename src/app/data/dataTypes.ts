@@ -12,21 +12,23 @@ const data:any[] = [];
 
 const createArray = () => {
   for (let i = 0; i < 100; i++ ) {
-    data.push({type: arrayOfTypes[i], name: names[i], amount: arrayCalcAmount[i] });
+    data.push({type: arrayOfTypes[i], name: names[i], amount: arrayCalcAmount[i]});
   }
   return data
 };
 
 createArray()
 
-const getArrayWithTypes = (array: object[],  typeForCheck: string | symbol) => {
+const getArrayWithTypes = (array: any,  typeForCheck:any) => {
   const result = array.filter((item:any) => item.type === typeForCheck);
   return result
 };
 
+const outcome = "outcome";
+
 const arrayOfIncoms = getArrayWithTypes(data, "income");
 
-const arrayOfOutcoms = getArrayWithTypes(data, "outcome");
+const arrayOfOutcoms = getArrayWithTypes(data, outcome);
 
 const arrayOfInvestments = getArrayWithTypes(data, "investment");
 
