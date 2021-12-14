@@ -1,8 +1,8 @@
-function getStringFromValuesObjectProperties (receivedObject: object): string {
-  const arrayFromValuesObjectProperties: string[]  = Object.values(receivedObject);
-  const stringFromArray: string = arrayFromValuesObjectProperties.join(' ');
+const getPropertiesFromObject = (receivedObject: object): string => {
+  const arrayFromValuesObjectProperties  = Object.values(receivedObject);
+  const stringFromArray = arrayFromValuesObjectProperties.join(' ');
   return stringFromArray;
 };
 
-export {getStringFromValuesObjectProperties}
+export { getPropertiesFromObject }
 

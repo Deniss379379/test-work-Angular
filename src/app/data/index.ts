@@ -8,7 +8,6 @@ import {arrayOfIncoms,
         numberLoansTransactions,
         numberInvestmentsTransactions
         } from "./dataTypes"
-//import "./transactionsData"
 
 export {
         arrayOfIncoms,

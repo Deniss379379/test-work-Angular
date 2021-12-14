@@ -1,39 +1,45 @@
 
-import { transactions } from "./rawData"
+//import { transactions } from "./rawData"
 import { getRandomNumber } from "./utils/getRandomNumber"
-import { destructPropObj } from "./utils/destructPropObj";
-import { transformItemsArray } from "./utils/transformItemsArray"
-import { checkArray } from "./utils/checkArray"
-import  {extractNumberFromString} from  "./utils/extractNumberFromString"
-import {extractNumbersFromArrayOfStrings} from "./utils/extractNumbersFromArrayOfStrings"
-import {stringToNumber} from "./utils/stringToNumber"
+//import { getPropObj } from "./utils/destructPropObj";
+//import { checkArray } from "./utils/checkArray"
+//import  {extractNumberFromString} from  "./utils/extractNumberFromString"
+import { MIN_NUMBER, MAX_NUMBER, AFTERDOT } from "../constants";
+//import { transformItemsArray } from "./utils/transformItemsArray";
 
+//const rawData: object[] = transactions.data;
+//const arrayAmount: string[] = getPropObj(rawData, 'amount');
 
-const MIN = 1;
-const MAX = 4000;
-const AFTERDOT = 2;
+//checkArray(arrayAmount);
 
-const rawData = transactions.data;
-const arrayAmount = destructPropObj(rawData, 'amount');
+//TODO check equlity items
 
-
-checkArray(arrayAmount);
-
-const arrayStrings = arrayAmount[0].split(' ');
-
+//const arrayStrings: string[] = arrayAmount[0].split(' ');
   
-const result = extractNumbersFromArrayOfStrings(arrayStrings, extractNumberFromString);
+//const result  = transformItemsArray(arrayStrings, extractNumberFromString);
+//const flatArray  = result.flat();
 
-const flatArray = result.flat();
+//const [min, max, afterDot] = flatArray;
 
+//TODO check equlity numbers
 
-const test =  getRandomNumber(MIN, MAX, AFTERDOT);
-const emptyArray = Array(100)
+const data:any[] = [];
 
+const createArray = () => {
 
-const arrayCalcAmount = arrayAmount.map((item:any) => getRandomNumber(MIN, MAX, AFTERDOT));
+  for (let i = 0; i < 100; i++) {
+  
+    data.push(getRandomNumber(MIN_NUMBER, MAX_NUMBER, AFTERDOT));
+  }
 
+  return data
 
+};
 
-export {arrayCalcAmount}
+//createArray()
+
+const arrayCalcAmount = createArray();
+console.log(arrayCalcAmount)
+
+export { arrayCalcAmount };
 
